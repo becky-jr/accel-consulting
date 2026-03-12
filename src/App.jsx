@@ -668,8 +668,8 @@ function App() {
             <div className="footer-section">
               <h3>{currentContent.footer.contact}</h3>
               <ul>
-                <li><a href="mailto:info@company.com">accelconsultinguz@gmail.com</a></li>
-                <li><a href="tel:+998901234567">+998 90 154 00 33</a></li>
+                <li><a href="mailto:accelconsultinguz@gmail.com">accelconsultinguz@gmail.com</a></li>
+                <li><a href="tel:+998901540033">+998 90 154 00 33</a></li>
               </ul>
             </div>
             <div className="footer-section">
