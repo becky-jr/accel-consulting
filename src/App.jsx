@@ -759,13 +759,12 @@ function App() {
 							<h3>{currentContent.footer.social}</h3>
 							<ul>
 								<li>
-									<a href="#">Facebook</a>
+									<a href="https://www.instagram.com/accel_consultancy/">
+										Instagram
+									</a>
 								</li>
 								<li>
-									<a href="#">Instagram</a>
-								</li>
-								<li>
-									<a href="#">Telegram</a>
+									<a href="https://t.me/+998911839779">Telegram</a>
 								</li>
 							</ul>
 						</div>

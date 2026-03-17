@@ -149,17 +149,7 @@ body {
 	color: #3498db;
 }
 
-.cta-button.secondary {
-	background: transparent;
-	border: 2px solid #3498db;
-	color: #3498db;
-	transition: all 0.3s;
-}
 
-.cta-button.secondary:hover {
-	background: #3498db;
-	color: white;
-}
 
 .cta-button.primary {
 	background: transparent;
@@ -169,9 +159,9 @@ body {
 }
 
 .cta-button.secondary {
-	background: transparent;
+	background: #3498db;
 	border: 2px solid #3498db;
-	color: #3498db;
+	color: white;
 	transition: all 0.3s;
 }
 
@@ -181,8 +171,8 @@ body {
 }
 
 .cta-button.secondary:hover {
-	background: #3498db;
-	color: white;
+	background: transparent;
+	color: #3498db;
 }
 
 .cta-button.small {
@@ -1309,8 +1299,6 @@ header img {
 	.footer-section p {
 		max-width: 100%;
 	}
-
-
 }
 
 @media (max-width: 480px) {
@@ -1347,4 +1335,10 @@ header img {
 		width: 95%;
 		padding: 30px 20px;
 	}
+}
+
+
+.section-title {
+	text-align: center;
+	padding-bottom: 30px;
 }
