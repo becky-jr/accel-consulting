@@ -14,9 +14,6 @@ import {
 	FaHome,
 	FaHeadset,
 	FaGlobe,
-	FaEnvelope,
-	FaPhone,
-	FaMapMarker,
 } from "react-icons/fa";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -57,174 +54,6 @@ function App() {
 		));
 	};
 
-	// const content = {
-	//   uz: {
-	//     header: {
-	//       logo: "London O'qish Guruhi",
-	//       nav: ["Bosh sahifa", "Dastur haqida", "Afzalliklar", "Biz Haqimizda", "Aloqa"],
-	//       cta: "Ro'yxatdan o'tish"
-	//     },
-	//     hero: {
-	//       title: "Uzbekistondan Londonga o'qish uchun eng yaxshi guruh!",
-	//       subtitle: "Biz sizga Buyuk Britaniyaning eng nufuzli universitetlarida o'qish imkoniyatini taqdim etamiz. Professional maslahatlar, visa yordami va to'liq qo'llab-quvvatlash.",
-	//       buttons: ["Batafsil ma'lumot", "Ro'yxatdan o'tish"]
-	//     },
-	//     about: {
-	//       title: "Dastur haqida",
-	//       text1: "Bizning guruh 2018-yildan beri o'zbekistonlik talabalarga Londonda o'qishda yordam berib kelmoqda. Minglab talabalarimiz dunyoning eng yaxshi universitetlarida muvaffaqiyatli o'qimoqda.",
-	//       text2: "Biz nafaqat hujjat topshirishda, balki madaniy moslashish, turar joy topish va akademik muvaffaqiyatda ham yordam beramiz."
-	//     },
-	//     benefits: {
-	//       title: "Afzalliklar",
-	//       items: [
-	//         { icon: <FaUniversity />, title: "Top universitetlar", text: "Oxford, Cambridge, UCL va boshqa nufuzli OTMlar" },
-	//         { icon: <FaMoneyBillWave />, title: "Moliyaviy yordam", text: "Grantlar, stipendiyalar va kreditlar bo'yicha maslahat" },
-	//         { icon: <FaPassport />, title: "Visa yordami", text: "100% visa muvaffaqiyati uchun professional xizmat" },
-	//         { icon: <FaHome />, title: "Turar joy", text: "Talabalar uchun xavfsiz va qulay yashash joylari" },
-	//         { icon: <FaHeadset />, title: "Qo'llab-quvvatlash", text: "24/7 yordam va maslahat xizmati" },
-	//         { icon: <FaGlobe />, title: "Madaniy integratsiya", text: "Britaniya madaniyatiga tez moslashish" }
-	//       ]
-	//     },
-	//     testimonials: {
-	//       title: "Talabalar fikrlari",
-	//       items: [
-	//         { name: "Azizbek T.", text: "Bu guruh tufayli men UCLda o'qishni boshladim. Juda minnatdorman!" },
-	//         { name: "Madina K.", text: "Professional yordam va do'stona munosabat. Tavsiya qilaman!" },
-	//         { name: "Rustam A.", text: "Visa jarayoni juda oson bo'ldi. Barcha savollarimga javob oldim." }
-	//       ]
-	//     },
-	//     contact: {
-	//       title: "Aloqa",
-	//       form: {
-	//         name: "Ismingiz",
-	//         email: "Email",
-	//         message: "Xabar",
-	//         submit: "Yuborish"
-	//       },
-	//       info: {
-	//         email: "info@londonstudy.uz",
-	//         phone: "+998 90 123 45 67",
-	//         address: "Toshkent, O'zbekiston"
-	//       }
-	//     },
-	//     footer: {
-	//       logo: "London O'qish Guruhi",
-	//       links: ["Bosh sahifa", "Dastur haqida", "Afzalliklar", "Kurslar", "Aloqa"],
-	//       social: ["Facebook", "Instagram", "Telegram"],
-	//       copyright: "© 2024 London O'qish Guruhi. Barcha huquqlar himoyalangan."
-	//     }
-	//   },
-	//   ru: {
-	//     header: {
-	//       logo: "Группа London Study",
-	//       nav: ["Главная", "О программе", "Преимущества", "Курсы", "Контакты"],
-	//       cta: "Записаться"
-	//     },
-	//     hero: {
-
-	//     },
-	//     about: {
-	//       title: "О программе",
-	//       text1: "Наша группа с 2018 года помогает узбекистанским студентам учиться в Лондоне. Тысячи наших студентов успешно обучаются в лучших университетах мира.",
-	//       text2: "Мы помогаем не только с подачей документов, но и с культурной адаптацией, поиском жилья и академическими успехами."
-	//     },
-	//     benefits: {
-	//       title: "Преимущества",
-	//       items: [{ icon: <FaUniversity />, title: "Топ университеты", text: "Oxford, Cambridge, UCL и другие престижные ВУЗы" },
-	//       { icon: <FaMoneyBillWave />, title: "Финансовая помощь", text: "Консультации по грантам, стипендиям и кредитам" },
-	//       { icon: <FaPassport />, title: "Помощь с визой", text: "Профессиональная услуга для 100% успеха визы" },
-	//       { icon: <FaHome />, title: "Проживание", text: "Безопасное и комфортное жилье для студентов" },
-	//       { icon: <FaHeadset />, title: "Поддержка", text: "Круглосуточная помощь и консультации" },
-	//       { icon: <FaGlobe />, title: "Культурная интеграция", text: "Быстрая адаптация к британской культуре" }
-	//       ]
-	//     },
-	//     testimonials: {
-	//       title: "Отзывы студентов",
-	//       items: [
-	//         { name: "Азизбек Т.", text: "Благодаря этой группе я начал учиться в UCL. Очень благодарен!" },
-	//         { name: "Мадіна К.", text: "Профессиональная помощь и дружелюбное отношение. Рекомендую!" },
-	//         { name: "Рустам А.", text: "Процесс получения визы был очень простым. Получил ответы на все вопросы." }
-	//       ]
-	//     },
-	//     contact: {
-	//       title: "Контакты",
-	//       form: {
-	//         name: "Ваше имя",
-	//         email: "Email",
-	//         message: "Сообщение",
-	//         submit: "Отправить"
-	//       },
-	//       info: {
-	//         email: "info@londonstudy.ru",
-	//         phone: "+7 495 123 45 67",
-	//         address: "Москва, Россия"
-	//       }
-	//     },
-	//     footer: {
-	//       logo: "Группа London Study",
-	//       links: ["Главная", "О программе", "Преимущества", "Курсы", "Контакты"],
-	//       social: ["Facebook", "Instagram", "Telegram"],
-	//       copyright: "© 2024 Группа London Study. Все права защищены."
-	//     }
-	//   },
-	//   en: {
-	//     header: {
-	//       logo: "London Study Group",
-	//       nav: ["Home", "About Program", "Benefits", "About Us", "Contact"],
-	//       cta: "Register"
-	//     },
-	//     hero: {
-	//       title: "The best group for studying in London from Uzbekistan!",
-	//       subtitle: "We provide you with the opportunity to study at the most prestigious universities in the UK. Professional consultations, visa assistance and full support.",
-	//       buttons: ["Learn More", "Register"]
-	//     },
-	//     about: {
-	//       title: "About the Program",
-	//       text1: "Our group has been helping Uzbek students study in London since 2018. Thousands of our students are successfully studying at the world's best universities.",
-	//       text2: "We help not only with document submission, but also with cultural adaptation, finding housing and academic success."
-	//     },
-	//     benefits: {
-	//       title: "Benefits",
-	//       items: [
-	//         { icon: <FaUniversity />, title: "Top Universities", text: "Oxford, Cambridge, UCL and other prestigious universities" },
-	//         { icon: <FaMoneyBillWave />, title: "Financial Aid", text: "Advice on grants, scholarships and loans" },
-	//         { icon: <FaPassport />, title: "Visa Assistance", text: "Professional service for 100% visa success" },
-	//         { icon: <FaHome />, title: "Accommodation", text: "Safe and comfortable housing for students" },
-	//         { icon: <FaHeadset />, title: "Support", text: "24/7 help and consultation service" },
-	//         { icon: <FaGlobe />, title: "Cultural Integration", text: "Quick adaptation to British culture" }
-	//       ]
-	//     },
-	//     testimonials: {
-	//       title: "Student Reviews",
-	//       items: [
-	//         { name: "Azizbek T.", text: "Thanks to this group, I started studying at UCL. Very grateful!" },
-	//         { name: "Madina K.", text: "Professional help and friendly attitude. I recommend!" },
-	//         { name: "Rustam A.", text: "The visa process was very simple. Got answers to all questions." }
-	//       ]
-	//     },
-	//     contact: {
-	//       title: "Contact",
-	//       form: {
-	//         name: "Your Name",
-	//         email: "Email",
-	//         message: "Message",
-	//         submit: "Send"
-	//       },
-	//       info: {
-	//         email: "info@londonstudy.com",
-	//         phone: "+44 20 1234 5678",
-	//         address: "London, UK"
-	//       }
-	//     },
-	//     footer: {
-	//       logo: "London Study Group",
-	//       links: ["Home", "About Program", "Benefits", "Courses", "Contact"],
-	//       social: ["Facebook", "Instagram", "Telegram"],
-	//       copyright: "© 2024 London Study Group. All rights reserved."
-	//     }
-	//   }
-	// };
-
 	const content = {
 		uz: {
 			header: {
@@ -240,7 +69,7 @@ function App() {
 			},
 
 			hero: {
-				title: "O'zbekistondan Chet elda o'qish uchun ishonchli markaz!",
+				title: "O'zbekistondan chet elda o'qish uchun ishonchli agentlik!",
 				subtitle:
 					"Biz sizga Buyuk Britaniyaning eng nufuzli universitetlarida o'qish imkoniyatini yaratamiz. Professional maslahat, visa yordami va to'liq qo'llab-quvvatlash.",
 				buttons: ["Batafsil ma'lumot", "Ro'yxatdan o'tish"],
@@ -253,9 +82,11 @@ function App() {
 					"Ta'lim va qo'llab-quvvatlash",
 				],
 				texts: [
-					"Biz 2018-yildan beri O'zbekistonlik talabalarga Buyuk Britaniyada o'qish imkoniyatini yaratib kelmoqdamiz. Talabalarimiz dunyoning yetakchi universitetlarida muvaffaqiyatli tahsil olishmoqda.",
-					"Bizning asosiy maqsadimiz talabalarni xalqaro ta'lim muhitiga olib chiqish va ularga eng yaxshi universitetlarda o'qish imkoniyatini yaratishdir.",
-					"Biz universitet tanlash, hujjat topshirish, visa olish, turar joy topish va Londonga moslashishda to'liq yordam beramiz.",
+					"Biz 2024-yildan beri O'zbekistonlik talabalarga Buyuk Britaniya (UK) va Janubiy Koreyada o'qish imkoniyatini yaratib kelmoqdamiz. Talabalarimiz dunyoning yetakchi universitetlarida muvaffaqiyatli tahsil olishmoqda.",
+
+					"Bizning asosiy maqsadimiz talabalarni xalqaro ta'lim muhitiga olib chiqish va ularga eng yaxshi universitetlarda, xususan UK, South Korea va Canada davlatlarida o'qish imkoniyatini yaratishdir.",
+
+					"Biz universitet tanlash, hujjat topshirish, visa olish, turar joy topish va yangi davlatga moslashishda to'liq yordam beramiz. Ayniqsa Canada bo'yicha ko'proq ma'lumot va imkoniyatlarni muntazam ravishda ulashib boramiz.",
 				],
 			},
 
@@ -339,7 +170,7 @@ function App() {
 			},
 
 			hero: {
-				title: "Надежный центр для обучения за границей из Узбекистана!",
+				title: "Надежное агентство для обучения за границей из Узбекистана!",
 				subtitle:
 					"Мы помогаем студентам из Узбекистана поступить в лучшие университеты Великобритании.",
 				buttons: ["Подробнее", "Регистрация"],
@@ -348,11 +179,11 @@ function App() {
 			aboutSlider: {
 				titles: ["О программе", "Наша цель", "Образование и поддержка"],
 				texts: [
-					"С 2018 года наша команда помогает студентам из Узбекистана поступать в университеты Великобритании. Мы сотрудничаем с ведущими университетами и предоставляем профессиональную поддержку на всех этапах поступления.",
+					"С 2024 года мы предоставляем узбекским студентам возможность учиться в Соединенном Королевстве (Великобритании) и Южной Корее. Наши студенты успешно обучаются в ведущих университетах мира.",
 
-					"Наша главная цель — открыть студентам из Узбекистана возможности международного образования и помочь им построить успешную карьеру. Мы работаем индивидуально с каждым студентом и подбираем наиболее подходящие университеты и программы.",
+					"Наша основная цель — вывести студентов в международную образовательную среду и предоставить им возможность обучаться в лучших университетах, включая Великобританию, Южную Корею и Канаду.",
 
-					"Мы предоставляем полную поддержку на каждом этапе поступления: выбор университета, подготовка документов, помощь с визой и поиск жилья. Также мы помогаем студентам адаптироваться к жизни и обучению в Лондоне.",
+					"Мы оказываем полную поддержку на всех этапах: от выбора университета и подачи документов до получения визы, поиска жилья и адаптации в новой стране. Особое внимание мы уделяем Канаде, регулярно делясь актуальной информацией и возможностями обучения в этой стране.",
 				],
 			},
 			benefits: {
@@ -435,7 +266,7 @@ function App() {
 			},
 
 			hero: {
-				title: "A reliable center for studying abroad from Uzbekistan!",
+				title: "A reliable agency for studying abroad from Uzbekistan!",
 				subtitle:
 					"We help students from Uzbekistan get admission to top universities in the UK.",
 				buttons: ["Learn More", "Register"],
@@ -444,11 +275,11 @@ function App() {
 			aboutSlider: {
 				titles: ["About the Program", "Our Mission", "Education and Support"],
 				texts: [
-					"Since 2018, our organization has been helping students from Uzbekistan achieve their dream of studying in the United Kingdom. We work with leading universities to guide students through the admission process and help them prepare for academic and cultural life in the UK.",
+					"We have been providing opportunities for Uzbek students to study in the United Kingdom (UK) and South Korea since 2024. Our students are successfully studying at leading universities around the world.",
 
-					"Our mission is to open international education opportunities for talented students from Uzbekistan and help them build successful global careers. Our team works individually with every student to understand their goals and choose the most suitable universities and programs.",
+					"Our main goal is to bring students into the international education environment and provide them with opportunities to study at top universities, including the UK, South Korea, and Canada.",
 
-					"We provide full support during every stage of the study abroad journey, including university selection, document preparation, visa assistance, and accommodation search. Our team also helps students adapt to life and education in London.",
+					"We provide full support at every stage: from choosing a university and submitting applications to obtaining a visa, finding accommodation, and adapting to a new country. We place special focus on Canada, regularly sharing updated information and study opportunities.",
 				],
 			},
 			benefits: {
