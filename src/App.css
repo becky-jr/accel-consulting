@@ -149,8 +149,6 @@ body {
 	color: #3498db;
 }
 
-
-
 .cta-button.primary {
 	background: transparent;
 	border: 2px solid #3498db;
@@ -1337,8 +1335,27 @@ header img {
 	}
 }
 
-
 .section-title {
 	text-align: center;
 	padding-bottom: 30px;
+}
+
+.about-image {
+	width: 500px;
+	height: 350px;
+	flex-shrink: 0;
+	overflow: hidden;
+	border-radius: 16px;
+}
+
+.about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+
+.about-text p {
+	white-space: pre-line;
 }

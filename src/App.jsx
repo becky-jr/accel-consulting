@@ -7,6 +7,7 @@ import face2 from "./assets/face2.jpg";
 import imgf1 from "./assets/certificate1.jpg";
 import imgf2 from "./assets/certificate2.jpg";
 import logo from "./assets/logo.png";
+import img5 from "./assets/skilled.jpg";
 import {
 	FaUniversity,
 	FaMoneyBillWave,
@@ -24,7 +25,7 @@ function App() {
 	const [isSertifikatOpen, setIsSertifikatOpen] = useState(false);
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	const slides = [{ img: img4 }, { img: img3 }, { img: img2 }];
+	const slides = [{ img: img4 }, { img: img3 }, { img: img2 }, { img: img5 }];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -71,7 +72,7 @@ function App() {
 			hero: {
 				title: "O'zbekistondan chet elda o'qish uchun ishonchli agentlik!",
 				subtitle:
-					"Biz sizga Buyuk Britaniyaning eng nufuzli universitetlarida o'qish imkoniyatini yaratamiz. Professional maslahat, visa yordami va to'liq qo'llab-quvvatlash.",
+					"Biz sizga chet elning eng nufuzli universitetlarida o'qish imkoniyatini yaratamiz. Professional maslahat, visa yordami va to'liq qo'llab-quvvatlash.",
 				buttons: ["Batafsil ma'lumot", "Ro'yxatdan o'tish"],
 			},
 
@@ -80,13 +81,20 @@ function App() {
 					"Dastur haqida",
 					"Bizning maqsadimiz",
 					"Ta'lim va qo'llab-quvvatlash",
+					"Skilled Trade dasturi",
 				],
 				texts: [
-					"Biz 2024-yildan beri O'zbekistonlik talabalarga Buyuk Britaniya (UK) va Janubiy Koreyada o'qish imkoniyatini yaratib kelmoqdamiz. Talabalarimiz dunyoning yetakchi universitetlarida muvaffaqiyatli tahsil olishmoqda.",
+					"Biz 2024-yildan beri O'zbekistonlik talabalarga Buyuk Britaniya (UK), Janubiy Koreyada, Kanada va boshqa davlatlarda o'qish imkoniyatini yaratib kelmoqdamiz. Talabalarimiz dunyoning yetakchi universitetlarida muvaffaqiyatli tahsil olishmoqda.",
 
 					"Bizning asosiy maqsadimiz talabalarni xalqaro ta'lim muhitiga olib chiqish va ularga eng yaxshi universitetlarda, xususan UK, South Korea va Canada davlatlarida o'qish imkoniyatini yaratishdir.",
 
 					"Biz universitet tanlash, hujjat topshirish, visa olish, turar joy topish va yangi davlatga moslashishda to'liq yordam beramiz. Ayniqsa Canada bo'yicha ko'proq ma'lumot va imkoniyatlarni muntazam ravishda ulashib boramiz.",
+
+					`Kanadada malakali ishchi mutaxassisliklari bo‘yicha ta’lim
+					Qurilish sohasidagi kasblar 
+					Mexanika va avtomobilsozlik kasblari 
+					Payvandlash va ishlab chiqarish kasblari
+					Elektrotexnika va texnologiya kasblari`,
 				],
 			},
 
@@ -121,7 +129,7 @@ function App() {
 					{
 						icon: <FaGlobe />,
 						title: "Madaniy integratsiya",
-						text: "Britaniya madaniyatiga tez moslashish",
+						text: "Chet el madaniyatiga tez moslashish",
 					},
 				],
 			},
@@ -153,7 +161,7 @@ function App() {
 			},
 
 			footer: {
-				title: "London O'qish Guruhi",
+				title: "Chet elda O'qish Guruhi",
 				about:
 					"Biz talabalarni Buyuk Britaniya, Canada va boshqa chet-el universitetlariga o'qishga yuborish bo'yicha professional xizmat ko'rsatamiz.",
 				contact: "Kontaktlar",
@@ -166,58 +174,70 @@ function App() {
 			header: {
 				logo: "London Study Group",
 				nav: ["Главная", "О программе", "Преимущества", "О нас", "Контакты"],
-				cta: "Регистрация",
+				cta: "Зарегистрироваться",
 			},
 
 			hero: {
-				title: "Надежное агентство для обучения за границей из Узбекистана!",
+				title: "Надежное агентство для обучения за рубежом из Узбекистана!",
 				subtitle:
-					"Мы помогаем студентам из Узбекистана поступить в лучшие университеты Великобритании.",
-				buttons: ["Подробнее", "Регистрация"],
+					"Мы создаем для вас возможность учиться в самых престижных университетах за рубежом. Профессиональные консультации, визовая помощь и полная поддержка.",
+				buttons: ["Подробнее", "Зарегистрироваться"],
 			},
 
 			aboutSlider: {
-				titles: ["О программе", "Наша цель", "Образование и поддержка"],
+				titles: [
+					"О программе",
+					"Наша цель",
+					"Образование и поддержка",
+					"Программа Skilled Trade",
+				],
 				texts: [
-					"С 2024 года мы предоставляем узбекским студентам возможность учиться в Соединенном Королевстве (Великобритании) и Южной Корее. Наши студенты успешно обучаются в ведущих университетах мира.",
+					"С 2024 года мы создаем возможности для студентов из Узбекистана обучаться в Великобритании (UK), Южной Корее, Канаде и других странах. Наши студенты успешно учатся в ведущих университетах мира.",
 
-					"Наша основная цель — вывести студентов в международную образовательную среду и предоставить им возможность обучаться в лучших университетах, включая Великобританию, Южную Корею и Канаду.",
+					"Наша основная цель — вывести студентов в международную образовательную среду и предоставить им возможность учиться в лучших университетах, в частности в Великобритании, Южной Корее и Канаде.",
 
-					"Мы оказываем полную поддержку на всех этапах: от выбора университета и подачи документов до получения визы, поиска жилья и адаптации в новой стране. Особое внимание мы уделяем Канаде, регулярно делясь актуальной информацией и возможностями обучения в этой стране.",
+					"Мы полностью помогаем с выбором университета, подачей документов, получением визы, поиском жилья и адаптацией в новой стране. Особенно регулярно делимся более подробной информацией и возможностями по Канаде.",
+
+					`Обучение по квалифицированным рабочим специальностям в Канаде
+Строительные специальности
+Механические и автомобильные специальности
+Сварочные и производственные специальности
+Электротехнические и технологические специальности`,
 				],
 			},
+
 			benefits: {
 				title: "Преимущества",
 				items: [
 					{
 						icon: <FaUniversity />,
 						title: "Топ университеты",
-						text: "Oxford, Cambridge, UCL и другие",
+						text: "Oxford, Cambridge, UCL и другие престижные вузы",
 					},
 					{
 						icon: <FaMoneyBillWave />,
 						title: "Финансовая помощь",
-						text: "Консультации по грантам и стипендиям",
+						text: "Консультации по грантам, стипендиям и кредитам",
 					},
 					{
 						icon: <FaPassport />,
-						title: "Визовая поддержка",
-						text: "Помощь при получении студенческой визы",
+						title: "Визовая помощь",
+						text: "Профессиональная помощь в процессе получения визы",
 					},
 					{
 						icon: <FaHome />,
 						title: "Проживание",
-						text: "Помощь в поиске жилья",
+						text: "Безопасные и комфортные места проживания для студентов",
 					},
 					{
 						icon: <FaHeadset />,
 						title: "Поддержка",
-						text: "Круглосуточная консультация",
+						text: "Круглосуточная помощь и консультации",
 					},
 					{
 						icon: <FaGlobe />,
-						title: "Интеграция",
-						text: "Помощь в адаптации к культуре",
+						title: "Культурная интеграция",
+						text: "Быстрая адаптация к зарубежной культуре",
 					},
 				],
 			},
@@ -227,16 +247,16 @@ function App() {
 				members: [
 					{
 						img: face1,
-						name: "Шамсиддин Туркханов",
-						text: "Специалист с опытом работы в образовательном консалтинге.",
+						name: "Шамсиддин Тураханов",
+						text: "Специалист с 7-летним опытом в сфере образовательного консалтинга.",
 					},
 					{
 						img: face2,
 						name: "Муслимбек Муминов",
-						text: "Консультант по визам и обучению.",
+						text: "Специалист по работе со студентами и визовый консультант.",
 					},
 				],
-				button: "Сертификаты",
+				button: "К сертификатам",
 			},
 
 			modal: {
@@ -249,9 +269,9 @@ function App() {
 			},
 
 			footer: {
-				title: "Группа London Study",
+				title: "Группа обучения за рубежом",
 				about:
-					"Мы предоставляем услуги по поступлению в университеты Великобритании, Канады и других зарубежный стран.",
+					"Мы предоставляем профессиональные услуги по отправке студентов на обучение в университеты Великобритании, Канады и других зарубежных стран.",
 				contact: "Контакты",
 				social: "Социальные сети",
 				copyright: "© 2026 Все права защищены.",
@@ -268,52 +288,64 @@ function App() {
 			hero: {
 				title: "A reliable agency for studying abroad from Uzbekistan!",
 				subtitle:
-					"We help students from Uzbekistan get admission to top universities in the UK.",
+					"We create opportunities for you to study at the most prestigious universities abroad. Professional guidance, visa assistance, and full support.",
 				buttons: ["Learn More", "Register"],
 			},
 
 			aboutSlider: {
-				titles: ["About the Program", "Our Mission", "Education and Support"],
+				titles: [
+					"About the Program",
+					"Our Mission",
+					"Education and Support",
+					"Skilled Trade Program",
+				],
 				texts: [
-					"We have been providing opportunities for Uzbek students to study in the United Kingdom (UK) and South Korea since 2024. Our students are successfully studying at leading universities around the world.",
+					"Since 2024, we have been creating opportunities for students from Uzbekistan to study in the United Kingdom (UK), South Korea, Canada, and other countries. Our students are successfully studying at leading universities around the world.",
 
-					"Our main goal is to bring students into the international education environment and provide them with opportunities to study at top universities, including the UK, South Korea, and Canada.",
+					"Our main goal is to introduce students to the international education environment and provide them with opportunities to study at top universities, especially in the UK, South Korea, and Canada.",
 
-					"We provide full support at every stage: from choosing a university and submitting applications to obtaining a visa, finding accommodation, and adapting to a new country. We place special focus on Canada, regularly sharing updated information and study opportunities.",
+					"We provide full support with choosing a university, submitting documents, obtaining a visa, finding accommodation, and adapting to a new country. We especially share more information and opportunities related to Canada on a regular basis.",
+
+					`Education in Canada for skilled trade professions
+Construction trades
+Mechanical and automotive trades
+Welding and manufacturing trades
+Electrical and technology trades`,
 				],
 			},
+
 			benefits: {
 				title: "Benefits",
 				items: [
 					{
 						icon: <FaUniversity />,
 						title: "Top Universities",
-						text: "Oxford, Cambridge, UCL and more",
+						text: "Oxford, Cambridge, UCL, and other prestigious universities",
 					},
 					{
 						icon: <FaMoneyBillWave />,
-						title: "Financial Aid",
-						text: "Guidance on scholarships and grants",
+						title: "Financial Support",
+						text: "Guidance on grants, scholarships, and student loans",
 					},
 					{
 						icon: <FaPassport />,
 						title: "Visa Assistance",
-						text: "Support during visa process",
+						text: "Professional support during the visa process",
 					},
 					{
 						icon: <FaHome />,
 						title: "Accommodation",
-						text: "Safe housing for students",
+						text: "Safe and comfortable living options for students",
 					},
 					{
 						icon: <FaHeadset />,
 						title: "Support",
-						text: "24/7 student support service",
+						text: "24/7 assistance and consultation service",
 					},
 					{
 						icon: <FaGlobe />,
 						title: "Cultural Integration",
-						text: "Help adapting to UK culture",
+						text: "Quick adaptation to foreign culture",
 					},
 				],
 			},
@@ -323,13 +355,13 @@ function App() {
 				members: [
 					{
 						img: face1,
-						name: "Shamsitdin Tyurakhanov",
-						text: "MBA York University Education consultant with 7 years of experience.",
+						name: "Shamsiddin Turakhanov",
+						text: "A specialist with 7 years of experience in educational consulting.",
 					},
 					{
 						img: face2,
-						name: "Muslimbek  Muminov",
-						text: " South Bank University London Student advisor specializing in visas and university admissions.",
+						name: "Muslimbek Muminov",
+						text: "A student relations specialist and visa consultant.",
 					},
 				],
 				button: "Certificates",
@@ -345,9 +377,9 @@ function App() {
 			},
 
 			footer: {
-				title: "London Study Group",
+				title: "Study Abroad Group",
 				about:
-					"We provide consulting services for students who want to study in the UK, Canada and other foreign countries.",
+					"We provide professional services for helping students study at universities in the UK, Canada, and other foreign countries.",
 				contact: "Contacts",
 				social: "Social Networks",
 				copyright: "© 2026 All rights reserved.",
@@ -461,7 +493,7 @@ function App() {
           </div>
         </section> */}
 
-				<section id="about" className="about">
+				{/* <section id="about" className="about">
 					<div className="container">
 						<div className="about-content">
 							<div className="about-text">
@@ -502,6 +534,46 @@ function App() {
 												? slides[2].subtitle
 												: slides[3].subtitle}
 								</div>
+							</div>
+
+							<div className="swiper">
+								<button className="prev" onClick={prevSlide}>
+									&#10094;
+								</button>
+								<button className="next" onClick={nextSlide}>
+									&#10095;
+								</button>
+							</div>
+
+							<div className="radio">
+								{slides.map((_, index) => (
+									<input
+										key={index}
+										type="radio"
+										checked={currentIndex === index}
+										onChange={() => goToSlide(index)}
+									/>
+								))}
+							</div>
+						</div>
+					</div>
+				</section> */}
+
+				<section id="about" className="about">
+					<div className="container">
+						<div className="about-content">
+							<div className="about-text">
+								<h2>{currentContent.aboutSlider.titles[currentIndex]}</h2>
+								<p>{currentContent.aboutSlider.texts[currentIndex]}</p>
+
+								<button className="cta-button">
+									{currentContent.header.cta}
+								</button>
+							</div>
+
+							<div className="about-image">
+								<img src={slides[currentIndex].img} alt="" />
+								<div className="subtitle">{slides[currentIndex].subtitle}</div>
 							</div>
 
 							<div className="swiper">
