@@ -18,7 +18,6 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { img, title } from "framer-motion/client";
 function App() {
 	const [language, setLanguage] = useState("uz");
 
@@ -39,20 +38,6 @@ function App() {
 
 	const goToSlide = (index) => {
 		setCurrentIndex(index);
-	};
-
-	const splitText = (text) => {
-		return text.split("").map((char, index) => (
-			<motion.span
-				key={index}
-				className="split-letter"
-				initial={{ opacity: 0, y: 20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ delay: index * 0.05, duration: 0.5 }}
-			>
-				{char === " " ? "\u00A0" : char}
-			</motion.span>
-		));
 	};
 
 	const content = {
@@ -480,85 +465,6 @@ Electrical and technology trades`,
 					</div>
 				</motion.section>
 
-				{/* <section id="home" className="hero">
-          <div className="container">
-            <div className="hero-content">
-              <h1 className="hero-title">{currentContent.hero.title}</h1>
-              <p className="hero-subtitle">{currentContent.hero.subtitle}</p>
-              <div className="hero-buttons">
-                <button className="cta-button primary">{currentContent.hero.buttons[0]}</button>
-                <button className="cta-button secondary">{currentContent.hero.buttons[1]}</button>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-				{/* <section id="about" className="about">
-					<div className="container">
-						<div className="about-content">
-							<div className="about-text">
-								<h2>{currentContent.aboutSlider.titles[currentIndex]}</h2>
-
-								{currentIndex === 0 ? (
-									<p>{currentContent.aboutSlider.texts[0]}</p>
-								) : currentIndex === 1 ? (
-									<p>{currentContent.aboutSlider.texts[1]}</p>
-								) : (
-									<p>{currentContent.aboutSlider.texts[2]}</p>
-								)}
-
-								<button className="cta-button">
-									{currentContent.header.cta}
-								</button>
-							</div>
-
-							<div className="about-image">
-								<img
-									src={
-										currentIndex === 0
-											? slides[0].img
-											: currentIndex === 1
-												? slides[1].img
-												: currentIndex === 2
-													? slides[2].img
-													: slides[3].img
-									}
-									alt=""
-								/>
-								<div className="subtitle">
-									{currentIndex === 0
-										? slides[0].subtitle
-										: currentIndex === 1
-											? slides[1].subtitle
-											: currentIndex === 2
-												? slides[2].subtitle
-												: slides[3].subtitle}
-								</div>
-							</div>
-
-							<div className="swiper">
-								<button className="prev" onClick={prevSlide}>
-									&#10094;
-								</button>
-								<button className="next" onClick={nextSlide}>
-									&#10095;
-								</button>
-							</div>
-
-							<div className="radio">
-								{slides.map((_, index) => (
-									<input
-										key={index}
-										type="radio"
-										checked={currentIndex === index}
-										onChange={() => goToSlide(index)}
-									/>
-								))}
-							</div>
-						</div>
-					</div>
-				</section> */}
-
 				<section id="about" className="about">
 					<div className="container">
 						<div className="about-content">
@@ -614,7 +520,7 @@ Electrical and technology trades`,
 					</div>
 				</section>
 
-				<section id="about" className="about">
+				<section id="courses" className="about">
 					<div className="container">
 						<div className="sarlavha">
 							<h1>{currentContent.team.title}</h1>
@@ -673,7 +579,7 @@ Electrical and technology trades`,
 						</div>
 					</div>
 					<div className="footer-bottom">
-						<p>&copy; {currentContent.footer.copyright}</p>
+						<p>{currentContent.footer.copyright}</p>
 					</div>
 				</footer>
 				{isSertifikatOpen && (
